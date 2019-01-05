@@ -1,6 +1,13 @@
 <?php
 
 
+//Exit if directly accessed (for security)
+ if(!function_exists('add_action')){
+    echo "You are not allowed to use this plugin directly";
+    exit();
+}
+
+
 //form function used to insert code in header
 function hfca_header_adder_settings(){  
 

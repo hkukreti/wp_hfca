@@ -1,6 +1,13 @@
 <?php
 
 
+//Exit if directly accessed (for security)
+ if(!function_exists('add_action')){
+    echo "You are not allowed to use this plugin directly";
+    exit();
+}
+
+
 //form function used to check token
 function hfca_footer_adder_settings(){  
     $Settings = hfca_settings_code_text();
